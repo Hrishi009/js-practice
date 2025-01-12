@@ -14,7 +14,8 @@ console.log(employeeEmail);
 console.log(employeePassword);
 console.log(accountType); */
 
-console.log([accountId, employeeEmail, employeePassword, accountType, accountState]);
+console.log(accountId); // to print single statement
+console.table([accountId, employeeEmail, employeePassword, accountType, accountState]) // to print multiple statments
 
 
 

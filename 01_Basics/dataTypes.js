@@ -1,3 +1,4 @@
+"use strict" ; // to treat all code with new syntax of java script
 let strValue = "Gaurav"
 let age = 19
 let isServer = true
