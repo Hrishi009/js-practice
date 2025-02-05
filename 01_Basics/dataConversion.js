@@ -5,6 +5,9 @@ let retval = 1
 let boolVal = true
 miscVal = 8789
 
+let scorePreIncrement = ++score
+let scorePostIncrement = score++
+
 
 // Before chsnged
 /*console.log(typeof score)
@@ -39,6 +42,12 @@ console.log(typeof changeddblVal)
 console.log(typeof changedretval)
 console.log(typeof changedboolVal)
 console.log(typeof changedmiscVal)
+
+
+console.log(scorePreIncrement)
+console.log(scorePostIncrement)
+
+
 
 
 
