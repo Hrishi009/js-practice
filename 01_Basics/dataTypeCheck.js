@@ -35,6 +35,16 @@ console.log(typeof func_2)
 console.log(typeof notVal)
 console.log(typeof retScore)
 
+// Primitive types Passed by Value
+// String, Int, Number, BigInt, Symbol, Float, null, Boolean
+
+// Non Primitive
+// array, function, objects
+
+// Java script is dynamically typed
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
 
 
 
