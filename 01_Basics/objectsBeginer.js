@@ -10,7 +10,8 @@ name: "Hitesh",
 email: "hitesh@google.com",
 location: "Indore",
 age: 18,
-lastLoggedIn: false
+lastLoggedIn: false,
+parameterFunction: function(){}
 } 
 
 //console.log(objFirst)
@@ -37,14 +38,38 @@ objFirst.email = "hitesh@google.com" // this will never change bcz of freez obje
 
 //Now adding a function 
 
-objFirst.greeting = function(){
+
+// Here we are adding a function externally
+
+/*objFirst.greeting = function(){
     console.log("This is greeting function");
 }
 
 objFirst.greetingTwo = function(){
     console.log(`This is greeting function for, ${this.email}`);
-}
+} */
 
-console.log(objFirst.greeting())
-console.log(objFirst.greetingTwo())
+// console.log(objFirst.greeting())
+// console.log(objFirst.greetingTwo())
+
+
+    // Now function is created separated from object and will be assigned to a function parameter
+
+    function passFirst(){
+        console.log(`This is greeting function for, ${this.email}`);
+    }
+
+   const toExecute = function(){
+    console.log(`This is greeting function for, ${this.email}`);
+
+   }
+
+    //objFirst.parameterFunction = passFirst
+    objFirst.parameterFunction = toExecute
+
+
+    console.log(objFirst.parameterFunction())
+
+
+
 
