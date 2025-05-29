@@ -32,6 +32,13 @@ console.log(`user name is ${anyObject.name} and employee code ${anyObject.empCod
 
 passingObject(userDetail)
 
+function directObjectPassing(empObj){
+    console.log(`school name is ${empObj.name} and stud id ${empObj.empCode}`)
+
+}
+
+directObjectPassing({name: "Gabriels", empCode: "234"})
+
 
 //Passing array in function
 
