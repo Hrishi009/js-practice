@@ -13,6 +13,13 @@ function calculateTotalPrice(...num1){
 console.log(calculateTotalPrice(2,3,4,5,6,7,8,9))
 
 
+//Spread operator with parameter if parameter is introduced in a function than values are ditributed within values and rest
+
+function restOperatorWithParameter(val1,val2,...num1){
+    return num1
+}
+console.log(`parameterised rest operator ${restOperatorWithParameter(2,3,4,5,6,7)}`)
+
 
 //passing object in function
 
