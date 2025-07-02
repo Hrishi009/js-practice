@@ -9,7 +9,7 @@
 <body style="background-color: #212121; color: #fff;">
     
 </body>
-<script>
+<!--<script>
     const div = document.createElement('div')
     console.log(div);
     div.className = "main"
@@ -22,5 +22,21 @@
     div.appendChild(addText)
 
     document.body.appendChild(div)
+</script> -->
+<script>
+    const div = document.createElement(`div`)
+    console.log(div);
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute(`title`,`Practice_Script`)
+    //div.textContent = "Practice to insert div in HTML page by java script";
+    div.style.backgroundColor = "green";
+    div.style.color = "yellow";
+    const txtAdd = document.createTextNode(`Practice to insert div in HTML page by java script`);
+    div.appendChild(txtAdd);
+    document.body.appendChild(div);
+
+
+
 </script>
 </html>
